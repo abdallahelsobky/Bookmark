@@ -1,0 +1,110 @@
+:root {
+  --main-color: #fec260;
+  --color1: #fff;
+  --color2: #000;
+  --visit-color: #9eb23b;
+  --visit-hover: #8a9e23;
+  --delete-color: #eb1d36;
+  --delete-hover: #d30820;
+}
+
+::selection {
+  background-color: var(--main-color);
+  color: #352e28;
+}
+.bree-serif-regular {
+  font-family: "Bree Serif", serif;
+}
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 500;
+}
+.fit-width {
+  width: fit-content;
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+}
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+}
+.dotted-border {
+  border-top: 2px dotted var(--color2);
+  border-bottom: 2px dotted var(--color2);
+}
+.isolate {
+  isolation: isolate;
+}
+.w-500 {
+  width: 500px;
+}
+main {
+  background-color: #f7ecde;
+}
+h1::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background-color: var(--main-color);
+  z-index: -1;
+  bottom: 0;
+  transition: all 400ms;
+}
+h1:hover::before {
+  height: 40px;
+}
+h2 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: var(--color1);
+  border-color: #d99c39;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.visit {
+  --bs-btn-color: var(--color1);
+  --bs-btn-bg: var(--visit-color);
+  --bs-btn-border-color: var(--visit-color);
+  --bs-btn-hover-color: var(--color1);
+  --bs-btn-hover-bg: var(--visit-hover);
+  --bs-btn-hover-border-color: var(--visit-hover);
+}
+
+.delete {
+  --bs-btn-color: var(--color1);
+  --bs-btn-bg: var(--delete-color);
+  --bs-btn-border-color: var(--delete-color);
+  --bs-btn-hover-color: var(--color1);
+  --bs-btn-hover-bg: var(--delete-hover);
+  --bs-btn-hover-border-color: var(--delete-hover);
+}
+.colors > * {
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+
+  border-radius: 50%;
+}
+.colors .red {
+  background-color: #f15f5d;
+}
+.colors .gold {
+  background-color: #febe2e;
+}
+
+.colors .green {
+  background-color: #4db748;
+}
+.box {
+  background-color: #00000082;
+}
